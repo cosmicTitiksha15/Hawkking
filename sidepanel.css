@@ -1,0 +1,91 @@
+:root{
+  --dark-mode: #333;
+  --color-white: #ffffff;
+    /* Primary Palette */
+  --color-dust-blue: #99c6d1;
+  --color-soft-peach: #ecc4aa;
+
+  /* Supporting Palette */
+  --color-sage-green: #839b63;
+  --color-lavender: #a47cc7;
+}
+
+body { 
+    font-family: Arial, sans-serif;
+    padding: 15px;
+    margin: 0; 
+    background-color: var(--dark-mode);
+    color: var(--color-white); 
+}
+.container { 
+    display: flex; 
+    align-items: center;      /* Centers items vertically */
+    justify-content: center;  /* Centers items horizontally (optional) */
+    height: 100vh;
+    flex-direction: column;
+    gap: 15px; 
+}
+.heading{
+    font-family: "Doto", sans-serif, Arial, Helvetica;
+    font-size: 17px;
+}
+
+.api-link a{
+    text-align: center;
+    color: var(--color-dust-blue);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.api-link a:hover{
+    text-decoration: underline;
+    color: var(--color-lavender);
+}
+
+.hidden { 
+    display: none !important;
+}
+input, button { 
+    padding: 10px;
+    font-size: 14px; 
+    border-radius: 5px;  
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid var(--color-lavender);
+    color: var(--color-white);
+}
+
+input:focus{
+    outline: none;
+}
+
+button { 
+    background-color: transparent;
+    color: var(--color-soft-peach);
+    border-top: 1px solid var(--color-dust-blue);
+    border-bottom: 1px solid var(--color-dust-blue);
+    border-left: 1px solid var(--color-lavender);
+    border-right: 1px solid var(--color-lavender);
+    cursor: pointer; 
+    font-weight: bold; 
+}
+button:hover { 
+    background-color: var(--color-soft-peach);
+    color: var(--dark-mode);
+    border: none; 
+}
+.card { 
+    vertical-align: center;
+    background: transparent;
+    padding: 15px; 
+    border-radius: 8px; 
+    box-shadow: 2px 2px 5px var(--color-soft-peach),
+    -2px 2px 5px var(--color-dust-blue),
+    0px 2px 5px var(--color-lavender),
+    0px -2px 5px var(--color-sage-green); 
+}

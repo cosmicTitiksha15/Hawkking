@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hawkking: Be the Explorer!</title>
+  <link rel="stylesheet" href="sidepanel.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <div class="container">
+
+    <div id="setup-view" class="card hidden">
+      <h3 class="heading">Enter your Gemini API key</h3>
+      <p class="api-link"><a href="https://aistudio.google.com/api-keys?project=gen-lang-client-0555247765" target="_blank">Get your key</a></p>
+      <input type="password" id="api-key-input" placeholder="AIzaSy..." />
+      <button id="save-key-btn" style="margin-top: 10px;">Save API Key</button>
+    </div>
+
+    <div id="main-view" class="card hidden">
+      <h3>Active Dashboard</h3>
+      <p>⚡ 100-Word Summary ready to extract.</p>
+      <p>💬 Chat & Smart Filters (Action scenes, Specific stars, Reimbursements).</p>
+      <p>📝 Full Pack Course (MCQs, Subjective, Numerical variants).</p>
+      <button id="clear-key-btn" style="background-color: #f44336;">Remove API Key</button>
+    </div>
+  </div>
+
+  <!-- <script src="sidepanel.js"></script> -->
+</body>
+</html>

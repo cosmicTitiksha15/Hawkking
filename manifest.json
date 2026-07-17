@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "Hawkking",
+    "version": "1.0",
+    "description": "An outstanding tool to test your knowledge right away, do your complete preparation on any video-based content, know the summary before watching the complete video, a youtube-specific extension.",
+    "icons" : {
+        "16" : "images/icon16.png",
+        "32" : "images/icon32.png",
+        "48" : "images/icon48.png",
+        "128" : "images/icon128.png"
+    },
+    "permissions" : [
+        "storage",
+        "sidePanel",
+        "activeTab"
+    ],
+    "background" : {
+        "service_worker" : "background.js"
+    },
+    "side_panel" : {
+        "default_path" : "sidepanel.html"
+    },
+    "action" : {
+        "default_title" : "Ready to explore? "
+    }
+}
