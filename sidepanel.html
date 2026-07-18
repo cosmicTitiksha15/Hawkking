@@ -12,23 +12,25 @@
 </head>
 <body>
   <div class="container">
-
+    <!-- Upon Installation, asking for Gemini API Key -->
     <div id="setup-view" class="card hidden">
       <h3 class="heading">Enter your Gemini API key</h3>
       <p class="api-link"><a href="https://aistudio.google.com/api-keys?project=gen-lang-client-0555247765" target="_blank">Get your key</a></p>
       <input type="password" id="api-key-input" placeholder="AIzaSy..." />
       <button id="save-key-btn" style="margin-top: 10px;">Save API Key</button>
     </div>
+    <!-- Setup-View card ends -->
 
-    <div id="main-view" class="card hidden">
-      <h3>Active Dashboard</h3>
-      <p>⚡ 100-Word Summary ready to extract.</p>
-      <p>💬 Chat & Smart Filters (Action scenes, Specific stars, Reimbursements).</p>
-      <p>📝 Full Pack Course (MCQs, Subjective, Numerical variants).</p>
-      <button id="clear-key-btn" style="background-color: #f44336;">Remove API Key</button>
+    <!-- Main-view, where user could search its query -->
+    <div id="main-view" class="hidden">
+      <div class="bottoms">
+        <textarea type="text" placeholder="Search your query here..." class="query-bar"></textarea>
+      </div>
     </div>
+    <!-- Main-view ends here -->
+
   </div>
 
-  <!-- <script src="sidepanel.js"></script> -->
+  <script src="sidepanel.js"></script>
 </body>
 </html>

@@ -1,6 +1,6 @@
 :root{
-  --dark-mode: #333;
-  --color-white: #ffffff;
+  --dark-mode: #1A1A1A;
+  --color-white: whitesmoke;
     /* Primary Palette */
   --color-dust-blue: #99c6d1;
   --color-soft-peach: #ecc4aa;
@@ -14,17 +14,30 @@ body {
     font-family: Arial, sans-serif;
     padding: 15px;
     margin: 0; 
+    height: 100vh;
+    box-sizing: border-box;
     background-color: var(--dark-mode);
     color: var(--color-white); 
 }
 .container { 
     display: flex; 
-    align-items: center;      /* Centers items vertically */
-    justify-content: center;  /* Centers items horizontally (optional) */
-    height: 100vh;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
     flex-direction: column;
-    gap: 15px; 
+    box-sizing: border-box;
 }
+
+#main-view {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex: 1;
+    width: 100%;
+    min-height: 0;
+}
+
+/* Setup-view CSS starts here */
 .heading{
     font-family: "Doto", sans-serif, Arial, Helvetica;
     font-size: 17px;
@@ -81,11 +94,40 @@ button:hover {
 }
 .card { 
     vertical-align: center;
-    background: transparent;
-    padding: 15px; 
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px; 
     border-radius: 8px; 
     box-shadow: 2px 2px 5px var(--color-soft-peach),
     -2px 2px 5px var(--color-dust-blue),
     0px 2px 5px var(--color-lavender),
     0px -2px 5px var(--color-sage-green); 
+}
+/* Setup-view CSS ends here */
+
+.bottoms{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: auto;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 4px;
+}
+
+.query-bar{
+    flex: 1;
+    min-width: 270px;
+    background: rgba(255, 255, 255, 0.1);
+    border-top: 1px solid var(--color-dust-blue);
+    border-bottom: 1px solid var(--color-dust-blue);
+    border-left: 1px solid var(--color-lavender);
+    border-right: 1px solid var(--color-lavender);
+    border-radius: 5px;
+    padding: 10px;
+    color: var(--color-white);
+    font-size: 15px;
+}
+
+.query-bar:focus{
+    outline: none;
 }
